@@ -1,6 +1,6 @@
 // traits
 import { canGetStregth, canChallenge } from '../traits/fighting'
-import { canGetName } from '../traits/identification'
+import { canGetName, canEqual } from '../traits/identification'
 
 // fighter entity
 const createFighter = ({ strength, name }) => {
@@ -15,7 +15,8 @@ const createFighter = ({ strength, name }) => {
     instance,
     canChallenge(instance),
     canGetStregth(instance),
-    canGetName(instance)
+    canGetName(instance),
+    canEqual(instance)
   )
 }
 
